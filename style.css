@@ -1,0 +1,340 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  overflow-x:hidden ;
+}
+@font-face {
+  font-family: 'NB International Pro Book';
+  src: url('fonts/NBInternationalProBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.menu {
+  border: none;
+  color: white;
+  display: inline-block;
+  margin-right: 50px;
+
+  
+}
+.logo-div {
+  font-size: 16px;
+  display: inline-block;
+  font-family: 'NB International Pro Book',sans-serif;
+  margin-left: 50px;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+}
+nav {
+  background-color: transparent;
+  height: 30px;
+  width: 100%;
+  color: white;
+  position: sticky;
+  top: 60px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.hero-video-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -5;
+  top: 0px;
+  overflow: hidden;
+}
+.hero-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.hero-text{
+  color: white;
+  font-family: 'NB International Pro Book',sans-serif;
+}
+.letters-div{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 95%;
+position: absolute;
+bottom: 0px;
+left: 30px;
+}
+.second-div{
+width: 100%;
+height: 550px;
+
+padding: 50px 70px ;
+}
+.venture-text-div{
+font-size: 60px;
+font-family: 'NB International Pro Book',sans-serif;
+min-height: 350px;
+width: 100%;
+padding-left: 50px  ;
+
+}
+.venture-text-div-top{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+
+}
+.venture-text-div-top span{
+font-size: 25px;
+font-weight: 400;
+font-family: 'NB International Pro Book',sans-serif;
+
+}
+.venture-text-div span{
+margin-left: 100px;
+}
+.third-div{
+height: 400px;
+width: 100%;
+}
+.third-top{
+display: flex;
+justify-content: center;
+padding-top: 100px;
+}
+.arrow{
+  transform: rotate(-90deg);
+  background-color: pink;
+  margin-left: 50px;
+}
+.third-bottom{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+
+}
+.third-bottom a {
+text-decoration-color: black;
+text-decoration-style:solid ;
+text-underline-offset: 8px;
+text-decoration-thickness: auto;
+text-decoration: underline;
+font-size: 60px;
+cursor: pointer;
+}
+.forth-div-bottom{
+display: grid;
+gap: 20px;
+grid-template-columns: 1fr 1fr 1fr;
+
+margin-left:50px ;
+margin-right:50px ;
+}
+.forth-div{
+height: 700px;
+}
+
+.image-video-div{
+position: relative;
+}
+.image-video-div-img{
+opacity: 1;
+position: absolute;
+
+z-index: 1;
+object-fit: cover;
+transition: z-index 0.6s ease-in-out;
+transition: opacity 0.6s ease-in-out;
+
+
+}
+.image-video-div-logo{
+position: absolute;
+
+z-index: 9999;
+margin-top: 500px;
+margin-left:120px ;
+}
+.image-video-div video{
+opacity: 0.9;
+position: absolute;
+z-index: 0; 
+object-fit: cover;
+transition: z-index 0.6s ease-in-out;
+transition: opacity 0.6s ease-in-out;
+
+
+}
+.image-video-div-img:hover{
+opacity: 0;
+z-index: -1;
+}
+.image-video-div video:hover{
+z-index: 1; 
+opacity: 1;
+
+}
+.forth-div-top{
+display: flex;
+justify-content: space-between;
+padding: 10px 50px;
+font-size: 25px;
+font-family: 'NB International Pro Book',sans-serif;
+
+}
+.fifth-div,.seventh-div{
+font-family: 'NB International Pro Book',sans-serif;
+padding: 30px 50px;
+margin-top: 50px;
+}
+.fifth-div-bottom,.seventh-div-bottom{
+font-size:60px ;
+}
+.fifth-div-top,.seventh-div-top{
+font-size: 25px;
+padding: 10px 0px;
+}
+.sixth-div{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.eighth-div{
+position: relative;
+height: 500px;
+}
+.eighth-div-bottom{
+height: 400px;
+position: absolute;
+top: 130px;
+
+
+}
+.slider{
+height:100%;
+position: relative;
+display: grid;
+place-items: center;
+overflow: hidden;
+}
+.slider-track{
+display: flex;
+width: calc(350px * 10);
+animation: scroll 40s linear infinite;
+
+}
+.slide{
+height:350px ;
+width: 350px;
+display: flex;
+align-items: flex-end;
+padding: 10px;
+}
+.slide img{
+width: 100%;
+cursor: grab;
+}
+
+@keyframes scroll {
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(calc(-350px * 5));
+}
+
+}
+.eighth-div-top{
+font-family: 'NB International Pro Book',sans-serif;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+
+}
+.eighth-div-top-right{
+font-size:24px;
+cursor: pointer;
+padding: 30px 50px;
+
+}
+.nineth-div{
+height: 400px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.nineth-div-bottom{
+font-size: 40px;
+}
+footer{
+    background-color: black;
+font-family: 'NB International Pro Book',sans-serif;
+    color: rgb(255, 252, 241) ;
+    height: 700px;
+
+
+
+}
+.upper-footer{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+.upper-footer-top,.upper-footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.upper-footer-top-right,.upper-footer-bottom-right{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.take-a-seat{
+    border:1px solid rgb(255, 252, 241) ;
+    padding:  15px;
+    border-radius: 30px;
+    transition: backgroud-color 2s;
+
+}
+.take-a-seat:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.scroll-animation{
+  animation: scrollReveal 1s ease-in-out ;
+  animation-timeline:view();
+  animation-range: entry 0% cover 50%;
+  animation-delay:0.1s ;
+}
+@keyframes scrollReveal {
+  from{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
